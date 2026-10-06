@@ -1,0 +1,67 @@
+{
+  "name": "n8n",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "a2fcf352-d346-4b6c-913b-f3a2f35b0a15",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "sendTo": "nivetha6319@gmail.com",
+        "subject": "hlo nivi",
+        "message": "ttfhgjnmfhgjkrtfghj hlo loosu nivi",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        224,
+        0
+      ],
+      "id": "9954aa26-5a51-4ee2-b316-804194be8ab5",
+      "name": "Send a message",
+      "webhookId": "984dcada-212f-439e-a51c-8d4a700d7884",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "FtBE43Z7Rx2dngST",
+          "name": "Gmail account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": true
+  },
+  "versionId": "382cc0eb-1b8c-4798-a710-4acda5cad82f",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "5885a0efd1022fb772d4d4812f593e936cd01f475e008a8960ea479c158f24ea"
+  },
+  "nodeGroups": [],
+  "id": "V5THpquDdBtaltsU",
+  "tags": []
+}
